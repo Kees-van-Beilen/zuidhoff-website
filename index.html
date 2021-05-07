@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zuidhoff</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet/less" type="text/css" href="zuidhoff.less" />
+	<script src="//cdn.jsdelivr.net/npm/less@3.13" ></script>
+	<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+	<script src="./scripts/jquery.fittext.js"></script>
+
+	<script src="./scripts/navbar.js"></script>
+	<script src="./scripts/quotes.js"></script>
+	<script src="./scripts/demo.js"></script>
+</head>
+<body>
+	<div class="title-bar">
+		<a href="https://bit.ly/zuidhoff" id="downloadlink" class="desktopButtons" style="text-align: right;">Download</a>
+		<h1>Zuidhoff</h1>
+		<a href="#" class="desktopButtons" style="text-align: left;">Ontmoet het team</a>
+		<div id="firstPageNav">
+			<button onclick="document.getElementById('downloadlink').click()">Download</button>
+			<button>Ontmoet het team</button>
+		</div>
+	</div>
+	<div class="contentH">
+		
+	</div>
+	<div class="qoutes">
+		
+
+		<h1 data='["Minder Huiswerk, Meer Gamen.","Werk slim, niet hard.","Keine Huiswerk Bitte!","Eindelijk van thiele af!","A Zuidhoff A Day Keeps The Docenten Away."]' style="display:block;">Werk slim niet hard.</h1>
+	</div>
+
+	<div class="sub" style="display: flex;flex-wrap: wrap;justify-content: center;">
+		<div class="content">
+			<h1>Recensies</h1>
+			<div>
+				<h2>"Werkt Perfect"</h2>
+					<p>Daniel visser</p>
+			</div>
+			<div>
+				<h2>"Nu ben ik eindelijk van Thiele af"</h2>
+					<p>Naam weggelaten</p>
+			</div>
+			<div>
+				<h2>"ZUIDHOFF IS GOATED"</h2>
+					<p>Ræmen</p>
+			</div>
+			<div>
+				<h2>"Beste extensie ooit"</h2>
+					<p>Hylke</p>
+			</div>
+		</div>
+		<div class="content" >
+			<h1>Live Demo</h1>
+			<div id="demo">
+				<div class="vragen" id="vraag_meerkeuze">
+					<p>
+		                <b>Kies het juiste antwoord.</b>
+		            </p>
+		            <div style="height: 4px"></div>
+		            <p>
+		                Lees de tekst ‘Een hele saaie tekst’ en beantwoord de volgende vragen.
+		            </p>
+		            <p>
+		                In figuur 8.9a zie je een model van een saaiheidsmeter. Leid uit de figuur af hoe saai dit huiswerk is.
+		            </p>
+		            <div style="height: 8px"></div>
+		            <div class="choise">Saai</div>
+		            <div class="choise">Super Saai</div>
+		            <div class="choise">Mega Saai</div>
+		            <div class="choise" done="false" id="ac1">Zzz</div>
+				</div>
+				<div style="height: 8px"></div>
+				<div class="vragen" id="vraag_invul">
+					<p>
+		                <b>Kies het juiste antwoord.</b>
+		            </p>
+		            <p>
+		                Het verbranden van diesel in een auto is nooit helemaal volledig. Wanneer diesel onvolledig verbrandt, kunnen water en twee andere reactieproducten ontstaan.
+		            </p>
+		            <p>
+		                Welke twee (andere) reactieproducten kunnen er dan ontstaan?
+		            </p>
+		            <div class="choise" done="false" id="ac2">C</div>
+		            <div class="choise" done="false" id="ac3">CO</div>
+		            <div class="choise">CO<sub>2</sub></div>
+		            <div class="choise">H</div>
+		            <div class="choise">H<sub>2</sub></div>
+		            <div class="choise">H<sub>2</sub>O</div>
+				</div>
+				<div id="buttons">
+					<!--<button id="controleren">Controleren</button>-->
+					<button id="volgende">Volgende</button>
+					<button id="antw">Vul antwoorden automatisch in; Powered by Kees van Beilen</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="contentH">
+		
+	</div>
+</body>
+</html>
