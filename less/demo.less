@@ -1,0 +1,63 @@
+//
+// less/demo
+//
+
+
+
+#demo{
+	width: auto;
+	height: 600px;
+	line-height: 1.42857143;
+    padding:34px;
+
+    color: #colors[grey5dark];
+    background-color: #colors[grey6];
+    font-size: 1em;
+}
+
+#buttons #volgende{
+	background: url(./img/arrow.svg) no-repeat 88% center #FFCC00;
+	padding-right: 30px;
+}
+
+#buttons button{
+	background-color: #FFCC00;
+	color: #333333;
+    font-size: 16px;
+    float: left;
+    font-size: 1em;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    vertical-align: middle;
+    text-align: center;
+    height: 40px;
+    cursor: pointer;
+
+    border: solid 1px #colors[grey6];
+}
+#demo div.choise{
+	background-color: #colors[grey4];
+    border-radius: 5px;
+    border: solid 1px #colors[grey3];
+    cursor: pointer;
+    margin: 6px 0px;
+    line-height: 1.5em;
+    font-size: 1em;
+    color: #colors[grey5dark];
+    padding: 5px 6px;
+    border-radius: 5px;
+    &:hover{
+    	border: solid 1px #colors[grey2];
+    }
+    &[done="true"]{
+    	background: #colors[grey2] url(./img/goed.svg) no-repeat 95% 45%;
+    }
+}
+#buttons button:hover{
+	background-color:rgba(255,204,0,0.5);
+}
+#buttons #volgende:hover{
+	background: url(./img/arrow.svg) no-repeat 88% center rgba(255,204,0,0.5);
+}

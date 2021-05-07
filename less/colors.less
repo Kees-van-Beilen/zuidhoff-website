@@ -1,0 +1,75 @@
+//
+//	less/colors
+//
+
+//define colors in the old css fasion way
+:root{
+	//system grey
+	--grey6: rgb(242,242,247);
+	--grey5: rgb(229,229,234);
+	--grey4: rgb(209,209,214);
+	--grey3: rgb(199,199,204);
+	--grey2: rgb(174,174,178);
+	--grey1: rgb(142,142,147);
+	//system dark theme grey
+	--grey6dark:rgb(28,28,30);
+	--grey5dark:rgb(44,44,46);
+	--grey4dark:rgb(58,58,60);
+	--grey3dark:rgb(72,72,74);
+	--grey2dark:rgb(99,99,102);
+	--grey1dark:rgb(142,142,147);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root{
+		//flip them
+		--grey6dark: rgb(242,242,247);
+		--grey5dark: rgb(229,229,234);
+		--grey4dark: rgb(209,209,214);
+		--grey3dark: rgb(199,199,204);
+		--grey2dark: rgb(174,174,178);
+		--grey1dark: rgb(142,142,147);
+
+		--grey6:rgb(28,28,30);
+		--grey5:rgb(44,44,46);
+		--grey4:rgb(58,58,60);
+		--grey3:rgb(72,72,74);
+		--grey2:rgb(99,99,102);
+		--grey1:rgb(142,142,147);
+	}
+}
+
+
+//now redefine the so requaler people can use them
+#colors(){
+	grey6:var(--grey6);
+	grey5:var(--grey5);
+	grey4:var(--grey4);
+	grey3:var(--grey3);
+	grey2:var(--grey2);
+	grey1:var(--grey1);
+	grey6dark:var(--grey6dark);
+	grey5dark:var(--grey5dark);
+	grey4dark:var(--grey4dark);
+	grey3dark:var(--grey3dark);
+	grey2dark:var(--grey2dark);
+	grey1dark:var(--grey1dark);
+	//sort the by catagory
+	.backgrounds(){
+		6:var(--grey6);
+		5:var(--grey5);
+		4:var(--grey4);
+		3:var(--grey3);
+		2:var(--grey2);
+		1:var(--grey1);
+	}
+	.text(){
+		6:var(--grey6dark);
+		5:var(--grey5dark);
+		4:var(--grey4dark);
+		3:var(--grey3dark);
+		2:var(--grey2dark);
+		1:var(--grey1dark);
+	}
+	background:var(--grey6);
+}
